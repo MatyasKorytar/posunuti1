@@ -1,18 +1,18 @@
 led.plot(0, 0)
-led.plot(1, 0)
-led.plot(2, 0)
-led.plot(3, 0)
-led.plot(4, 0)
+led.plot(0, 1)
+led.plot(0, 2)
+led.plot(0, 3)
+led.plot(0, 4)
 def on_button_pressed_a():
     y = 0
     x = 0
     while y < 5:
         basic.clear_screen()
-        led.plot(0, x)
-        led.plot(1, x)
-        led.plot(2, x)
-        led.plot(3, x)
-        led.plot(4, x)
+        led.plot(x, 0)
+        led.plot(x, 1)
+        led.plot(x, 2)
+        led.plot(x, 3)
+        led.plot(x, 4)
         x += 1
         basic.pause(3000)
         y += 1 
